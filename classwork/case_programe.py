@@ -1,6 +1,6 @@
 a = int(input("Enter a number:"))
 choice = int(input("Enter your operation:"))
-print("1-add,2-minus,3-multipication,4-division")
+print("(1-add,2-minus,3-multipication,4-division)")
 b = int(input("Enter a number:"))
 
 match choice:
