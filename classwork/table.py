@@ -1,5 +1,5 @@
 a = int(input("Enter a number:"))
 
 for i in range (1,11):
-    i=i*a
-    print(i)
+        j = a*i
+        print(f"{a} * {i} = {j}")
