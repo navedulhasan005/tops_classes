@@ -1,4 +1,4 @@
-number = int(input("Enter a decimal number: "))
+number = int(input("Enter a number: "))
 st = 0
 m = 1
 
@@ -7,4 +7,4 @@ while number != 0:
     st = (rem * m) + st
     number //= 2
     m *= 10
-print("Binary:", st)
+print("Binary:", st, end='')
