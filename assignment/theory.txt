@@ -10,7 +10,7 @@ Game Development: Python is used in the development of video games for various f
 Scientific and Numeric Computing: Python's power extends to scientific fields with libraries such as SciPy for mathematics, science, and engineering.
 Internet of Things (IoT) and Embedded Systems
 
-2.What is programing? 
+2.What is programming? 
 
 Programming is the process of writing step-by-step instructions (code) in a specialized language that tells a computer how to perform a specific task or solve a problem, 
 enabling the creation of software, apps, and systems we use daily, 
@@ -20,3 +20,14 @@ from websites to space exploration tools. It involves designing algorithms, writ
 
 Python is a popular, high-level, general-purpose programming language known for its simple, readable syntax, making it great for beginners and professionals, used widely in web development, data science, AI, automation, and software development. 
 It's an interpreted, object-oriented language that emphasizes clean code and supports various programming styles, allowing for rapid development and versatility across different platforms like Windows, macOS, and Linux. 
+
+4.How memory is managed in Python? 
+
+Python manages memory automatically through a private heap space, a dedicated area where all Python objects and data structures are stored. 
+The core mechanisms used to handle memory allocation and deallocation are reference counting and a generational garbage collector. 
+
+5.What is the purpose continuing statement in python?
+
+The continue statement in Python is used to skip the remaining code within the current loop iteration and immediately jump to the next iteration of the loop. 
+It is a control flow statement that allows you to bypass certain parts of a loop based on specific conditions without terminating the entire loop. 
+This helps in filtering data, handling invalid inputs, and making code cleaner by avoiding excessive indentation with nested if-else statements. 
