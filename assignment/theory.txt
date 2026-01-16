@@ -1,14 +1,14 @@
 1. What are the types of Applications?
 
 The main types of applications of Python include:
-Web Development: Python is used to develop the back-end of websites and web applications, handling server-side logic, database communication, and URL routing. Popular frameworks include Django (used by Instagram and Spotify), Flask (used by Pinterest and Netflix), and Pyramid.
-Data Science and Analysis: Python is a primary language for data manipulation, analysis, and visualization. Libraries like NumPy, Pandas, and Matplotlib facilitate complex statistical calculations and data modeling.
-Machine Learning (ML) and Artificial Intelligence (AI): The language's simple syntax and robust libraries (e.g., TensorFlow, Keras, and scikit-learn) make it ideal for developing AI and ML algorithms, including recommendation engines and natural language processing tools.
-Automation and Scripting: Python is widely used for writing scripts to automate repetitive tasks, manage system operations, perform web scraping, and automate testing procedures.
-Desktop Graphical User Interface (GUI) Applications: Developers can build cross-platform desktop applications using GUI frameworks like Tkinter (Python's standard library), PyQt, and Kivy.
-Game Development: Python is used in the development of video games for various functionalities, add-ons, and building game logic. Libraries like Pygame and Panda3D are popular choices.
-Scientific and Numeric Computing: Python's power extends to scientific fields with libraries such as SciPy for mathematics, science, and engineering.
-Internet of Things (IoT) and Embedded Systems
+-Web Development: Python is used to develop the back-end of websites and web applications, handling server-side logic, database communication, and URL routing. Popular frameworks include Django (used by Instagram and Spotify), Flask (used by Pinterest and Netflix), and Pyramid.
+-Data Science and Analysis: Python is a primary language for data manipulation, analysis, and visualization. Libraries like NumPy, Pandas, and Matplotlib facilitate complex statistical calculations and data modeling.
+-Machine Learning (ML) and Artificial Intelligence (AI): The language's simple syntax and robust libraries (e.g., TensorFlow, Keras, and scikit-learn) make it ideal for developing AI and ML algorithms, including recommendation engines and natural language processing tools.
+-Automation and Scripting: Python is widely used for writing scripts to automate repetitive tasks, manage system operations, perform web scraping, and automate testing procedures.
+-Desktop Graphical User Interface (GUI) Applications: Developers can build cross-platform desktop applications using GUI frameworks like Tkinter (Python's standard library), PyQt, and Kivy.
+-Game Development: Python is used in the development of video games for various functionalities, add-ons, and building game logic. Libraries like Pygame and Panda3D are popular choices.
+-Scientific and Numeric Computing: Python's power extends to scientific fields with libraries such as SciPy for mathematics, science, and engineering.
+ Internet of Things (IoT) and Embedded Systems.
 
 2. What is programming? 
 
@@ -31,3 +31,9 @@ The core mechanisms used to handle memory allocation and deallocation are refere
 The continue statement in Python is used to skip the remaining code within the current loop iteration and immediately jump to the next iteration of the loop. 
 It is a control flow statement that allows you to bypass certain parts of a loop based on specific conditions without terminating the entire loop. 
 This helps in filtering data, handling invalid inputs, and making code cleaner by avoiding excessive indentation with nested if-else statements. 
+
+17. What are negative indexes and why are they used?
+
+Negative indexes allow accessing elements from the end of a sequence (like lists, strings) in programming, 
+with -1 being the last item, -2 the second-to-last, and so on, simplifying operations and avoiding the need to calculate the length, 
+which is especially useful for retrieving items near the end without knowing the sequence's full size. 
