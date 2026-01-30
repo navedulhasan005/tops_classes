@@ -1,4 +1,3 @@
 import calculater
-calculater.sqaure(5)
-
+# calculater.sqaure(5)
 
