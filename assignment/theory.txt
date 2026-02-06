@@ -1,39 +1,94 @@
 1. What are the types of Applications?
 
-The main types of applications of Python include:
--Web Development: Python is used to develop the back-end of websites and web applications, handling server-side logic, database communication, and URL routing. Popular frameworks include Django (used by Instagram and Spotify), Flask (used by Pinterest and Netflix), and Pyramid.
--Data Science and Analysis: Python is a primary language for data manipulation, analysis, and visualization. Libraries like NumPy, Pandas, and Matplotlib facilitate complex statistical calculations and data modeling.
--Machine Learning (ML) and Artificial Intelligence (AI): The language's simple syntax and robust libraries (e.g., TensorFlow, Keras, and scikit-learn) make it ideal for developing AI and ML algorithms, including recommendation engines and natural language processing tools.
--Automation and Scripting: Python is widely used for writing scripts to automate repetitive tasks, manage system operations, perform web scraping, and automate testing procedures.
--Desktop Graphical User Interface (GUI) Applications: Developers can build cross-platform desktop applications using GUI frameworks like Tkinter (Python's standard library), PyQt, and Kivy.
--Game Development: Python is used in the development of video games for various functionalities, add-ons, and building game logic. Libraries like Pygame and Panda3D are popular choices.
--Scientific and Numeric Computing: Python's power extends to scientific fields with libraries such as SciPy for mathematics, science, and engineering.
- Internet of Things (IoT) and Embedded Systems.
+    The main types of applications of Python include:
+    -Web Development: Python is used to develop the back-end of websites and web applications, handling server-side logic, database communication, and URL routing. Popular frameworks include Django (used by Instagram and Spotify), Flask (used by Pinterest and Netflix), and Pyramid.
+    -Data Science and Analysis: Python is a primary language for data manipulation, analysis, and visualization. Libraries like NumPy, Pandas, and Matplotlib facilitate complex statistical calculations and data modeling.
+    -Machine Learning (ML) and Artificial Intelligence (AI): The language's simple syntax and robust libraries (e.g., TensorFlow, Keras, and scikit-learn) make it ideal for developing AI and ML algorithms, including recommendation engines and natural language processing tools.
+    -Automation and Scripting: Python is widely used for writing scripts to automate repetitive tasks, manage system operations, perform web scraping, and automate testing procedures.
+    -Desktop Graphical User Interface (GUI) Applications: Developers can build cross-platform desktop applications using GUI frameworks like Tkinter (Python's standard library), PyQt, and Kivy.
+    -Game Development: Python is used in the development of video games for various functionalities, add-ons, and building game logic. Libraries like Pygame and Panda3D are popular choices.
+    -Scientific and Numeric Computing: Python's power extends to scientific fields with libraries such as SciPy for mathematics, science, and engineering.
+    Internet of Things (IoT) and Embedded Systems.
 
 2. What is programming? 
 
-Programming is the process of writing step-by-step instructions (code) in a specialized language that tells a computer how to perform a specific task or solve a problem, 
-enabling the creation of software, apps, and systems we use daily, 
-from websites to space exploration tools. It involves designing algorithms, writing in languages like Python or JavaScript, testing, and debugging code to make technology functional. 
+    Programming is the process of writing step-by-step instructions (code) in a specialized language that tells a computer how to perform a specific task or solve a problem, 
+    enabling the creation of software, apps, and systems we use daily, 
+    from websites to space exploration tools. It involves designing algorithms, writing in languages like Python or JavaScript, testing, and debugging code to make technology functional. 
 
 3. What is Python?
 
-Python is a popular, high-level, general-purpose programming language known for its simple, readable syntax, making it great for beginners and professionals, used widely in web development, data science, AI, automation, and software development. 
-It's an interpreted, object-oriented language that emphasizes clean code and supports various programming styles, allowing for rapid development and versatility across different platforms like Windows, macOS, and Linux. 
+    Python is a popular, high-level, general-purpose programming language known for its simple, readable syntax, making it great for beginners and professionals, used widely in web development, data science, AI, automation, and software development. 
+    It's an interpreted, object-oriented language that emphasizes clean code and supports various programming styles, allowing for rapid development and versatility across different platforms like Windows, macOS, and Linux. 
 
 7. How memory is managed in Python? 
 
-Python manages memory automatically through a private heap space, a dedicated area where all Python objects and data structures are stored. 
-The core mechanisms used to handle memory allocation and deallocation are reference counting and a generational garbage collector. 
+    Python manages memory automatically through a private heap space, a dedicated area where all Python objects and data structures are stored. 
+    The core mechanisms used to handle memory allocation and deallocation are reference counting and a generational garbage collector. 
 
 8. What is the purpose continuing statement in python?
 
-The continue statement in Python is used to skip the remaining code within the current loop iteration and immediately jump to the next iteration of the loop. 
-It is a control flow statement that allows you to bypass certain parts of a loop based on specific conditions without terminating the entire loop. 
-This helps in filtering data, handling invalid inputs, and making code cleaner by avoiding excessive indentation with nested if-else statements. 
+    The continue statement in Python is used to skip the remaining code within the current loop iteration and immediately jump to the next iteration of the loop. 
+    It is a control flow statement that allows you to bypass certain parts of a loop based on specific conditions without terminating the entire loop. 
+    This helps in filtering data, handling invalid inputs, and making code cleaner by avoiding excessive indentation with nested if-else statements. 
 
 17. What are negative indexes and why are they used?
 
-Negative indexes allow accessing elements from the end of a sequence (like lists, strings) in programming, 
-with -1 being the last item, -2 the second-to-last, and so on, simplifying operations and avoiding the need to calculate the length, 
-which is especially useful for retrieving items near the end without knowing the sequence's full size. 
+    Negative indexes allow accessing elements from the end of a sequence (like lists, strings) in programming, 
+    with -1 being the last item, -2 the second-to-last, and so on, simplifying operations and avoiding the need to calculate the length, 
+    which is especially useful for retrieving items near the end without knowing the sequence's full size. 
+
+25.What is List? How will you reverse a list?
+
+    In Python, a List is a versatile, built-in data structure used to store a collection of items in a specific order. Lists are mutable, 
+    meaning you can change, add, or remove elements after the list has been created.
+    To reverse a list, you can use several methods depending on whether you want to modify the original list or create a new one:
+    1. Reversing In-Place (Modifies the original list) :
+    If you don't need to keep the original order, use the built-in list.reverse() method.
+    Ex:
+        fruits = ["apple", "banana", "cherry"]
+        fruits.reverse()
+        print(fruits) # Output: ["cherry", "banana", "apple"]
+    It is highly memory-efficient because it does not create a copy.
+    2. Slicing (Creates a new list)
+    The slicing trick [::-1] is the fastest and most concise way to create a reversed copy while keeping the original list intact. 
+    Ex :
+        numbers = [1, 2, 3, 4]
+        reversed_numbers = numbers[::-1]
+        print(reversed_numbers)  # Output: [4, 3, 2, 1]
+    3. Using the reversed() Function
+    The reversed() function returns a reverse iterator. 
+    This is ideal for looping through a list backwards without wasting memory on a new list. 
+    Ex :
+    for item in reversed(["a", "b", "c"]):
+        print(item)  # Prints: c, b, a
+
+26.How will you remove last object from a list?
+
+    Using pop(): The list.pop() method removes and returns the last element by default. 
+    It is highly efficient for this purpose because it operates in O(1) time complexity as no other elements need to be shifted.
+    Ex :
+    my_list = [10, 20, 30]
+    last_item = my_list.pop()  # Removes 30; last_item is 30
+    Using remove(): While possible, list.remove() is generally used for deleting items by value rather than position. If you specifically need to remove the last object by its value,
+    you would pass that value as an argument. 
+
+27.Suppose list1 is [2, 33, 222, 14, and 25], what is list1 [-1]?
+
+    The value of list1[-1] is: 25
+
+28.Differentiate between append () and extend () methods?
+
+    In Python, both append() and extend() are used to add elements to a list, but they handle their input differently: 
+    append(): Adds its argument as a single element at the end of the list. 
+    Even if you pass another list, it remains nested.
+    extend(): Iterates over its argument (which must be an iterable, like a list, tuple, or string) and adds each item individually.
+    Ex :
+        list1 = [1, 2]
+        list1.append([3, 4])
+        # Result: [1, 2, [3, 4]] (Nested list)
+
+        list2 = [1, 2]
+        list2.extend([3, 4])
+        # Result: [1, 2, 3, 4] (Flattened list)
+
