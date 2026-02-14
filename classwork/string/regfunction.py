@@ -25,4 +25,10 @@ import re
 # k = re.findall(r"\D","Hello World Hello Pyhton 12 32")
 # k = re.findall(r"\w","Hello World Hello Pyhton 12 !@ 32")
 # k = re.findall(r"\W","Hello World Hello Pyhton 12 !@ 32")
+# k = re.findall(r"\S","Hello World Hello Pyhton 12 !@ 32")
+# k = re.findall(r"\s","Hello World Hello Pyhton 12 !@ 32")
+# k = re.search(r"\Bued","The certificate was issued")
+k = re.search(r"\d{,10}","8239899067")
+
+
 print(k)
