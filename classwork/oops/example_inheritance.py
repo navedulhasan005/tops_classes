@@ -30,7 +30,6 @@ class Bajaj(OtherComponent):
 
 
 
-
 class RoyalEnfield(OtherComponent):
     pass
 
