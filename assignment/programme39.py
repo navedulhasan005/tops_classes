@@ -1,0 +1,7 @@
+"""39)Write a Python program to find the second smallest number in a list."""
+
+from functools import reduce
+l = [30,24,26,6,8,87,9,67,57]
+
+k = reduce(lambda a,b: a if a < b else b, l)
+print(k)
