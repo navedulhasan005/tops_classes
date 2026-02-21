@@ -92,3 +92,16 @@
         list2.extend([3, 4])
         # Result: [1, 2, 3, 4] (Flattened list)
 
+43.What is tuple? Difference between list and tuple.
+
+    A tuple is an ordered, immutable collection of elements used to store related pieces of data together. 
+    Once a tuple is created, its contents cannot be modified.
+    -   Key Differences Between List and Tuple
+Feature 	                List	                                        Tuple
+Mutability	Mutable (can be modified after creation)	Immutable (cannot be modified after creation)
+
+Syntax	    Uses square brackets[]                      Uses parentheses ()
+
+Performance	Slower for iteration and access	            Generally faster for iteration and access
+
+Memory	    Consumes more memory 	                    Consumes less memory 
