@@ -105,3 +105,21 @@ Syntax	    Uses square brackets[]                      Uses parentheses ()
 Performance	Slower for iteration and access	            Generally faster for iteration and access
 
 Memory	    Consumes more memory 	                    Consumes less memory 
+
+48.How will you create a dictionary using tuples in python?
+
+    You can create a dictionary from tuples in Python using the dict() constructor (for key-value pairs) or by having the tuples act as the keys or values themselves.
+    ex :-
+        #Using convertsion of tuple into dictionary.
+
+        tuple = (("name", "Alice"), ("age", 30), ("city", "New York"))
+        dict1 = dict(tuple)
+        print(dict1)
+        # Output: {'name': 'Alice', 'age': 30, 'city': 'New York'}
+
+        #Using Dictionary Comprehension.
+
+        tuple = [("name", "Alice"), ("age", 30), ("city", "New York")]
+        dict = {key: value for key, value in list_of_tuples}
+        print(dict)
+        # Output: {'name': 'Alice', 'age': 30, 'city': 'New York'}
