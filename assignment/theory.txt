@@ -123,3 +123,43 @@ Memory	    Consumes more memory 	                    Consumes less memory
         dict = {key: value for key, value in list_of_tuples}
         print(dict)
         # Output: {'name': 'Alice', 'age': 30, 'city': 'New York'}
+
+51.How Do You Traverse Through a Dictionary Object in Python?
+
+    You can traverse a Python dictionary using a for loop, most commonly with the .items(), .keys(), or .values() methods depending on what data you need to access.
+    Ex :-
+        #Accessing Both Keys and Values.
+
+            my_dict = {"color": "blue", "fruit": "apple", "pet": "dog"}
+
+            for key, value in my_dict.items():
+                print(f"{key} -> {value}")
+
+        # Using Dictionary Comprehension.
+
+            original_dict = {"a": 1, "b": 2, "c": 3, "d": 4}
+
+            even_items = {k: v for k, v in original_dict.items()}
+            print(even_items)
+
+52.How Do You Check the Presence of a Key in A Dictionary?
+    The most common and efficient way to check for a key's presence in a Python dictionary is using the in operator. 
+    Other methods include using the get() method.
+    Using the in Operator :
+        my_dict = {'apple': 1, 'banana': 2, 'cherry': 3}
+        key_to_check = 'banana'
+
+        if key_to_check in my_dict:
+            print(f"Key '{key_to_check}' exists in the dictionary.")
+        else:
+            print(f"Key '{key_to_check}' does not exist in the dictionary.")
+
+        Using get() Method :
+            d = {'a': 100, 'b':200, 'c':300}
+
+            # check if "b" is none or not.
+            if d.get('b') == None:
+            print("Not Present")
+            else:
+            print("Present")
+
