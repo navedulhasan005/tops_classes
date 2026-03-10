@@ -163,3 +163,107 @@ Memory	    Consumes more memory 	                    Consumes less memory
             else:
             print("Present")
 
+65. How Many Basic Types of Functions Are Available in Python?
+    
+    Python has two primary, basic types of functions: built-in functions and user-defined functions. 
+    Other forms, such as lambda, recursive, and generator functions, are often considered specialized variations of these two core types. 
+
+    Basic Types of Functions in Python
+    Built-in Functions: These functions are predefined in the Python interpreter and are always available for use without needing to be imported. They perform common, essential tasks, which saves developers time and effort in writing basic operations from scratch.
+    Examples: print(), len(), type(), abs(), max(), and min(). A complete list can be found in the Python documentation.
+
+    User-Defined Functions: These are functions that programmers create themselves using the def keyword to perform specific, customized tasks based on the application's needs. 
+    They allow for modularity, code reuse, and breaking down large programs into smaller, more manageable pieces. 
+
+66. How can you pick a random item from a list or tuple?
+
+    The most efficient and common way to pick a random item from a list or tuple in Python is by using the random.choice() function from the built-in random module. 
+
+    Using random.choice()
+    This method is direct, fast, and works on any sequence type (lists, tuples, strings). 
+
+    Example:-
+    import random
+
+    my_list = ['apple', 'banana', 'cherry', 'date']
+    my_tuple = ('red', 'green', 'blue')
+
+    # Pick a random item
+    random_item = random.choice(my_list)
+    print(random_item)
+
+67. How can you pick a random item from a range?
+
+    To pick a random item from a range in Python, you can use the random.choice(), random.randrange(), or random.randint() functions from the built-in random module. 
+
+    1. Using random.choice()
+    The random.choice() function is a straightforward way to pick a single random element from a sequence, including a range object. 
+
+    import random
+    # Define your range (e.g., from 0 up to, but not including, 10)
+    my_range = range(0, 10)
+
+    # Pick a random item
+    random_item = random.choice(my_range)
+    print(f"The random item is: {random_item}")
+
+    2. Using random.randrange()
+    The random.randrange() function is optimized for generating a random number from a specified range and supports an optional step value. The stop value is exclusive. 
+    
+    import random
+    # Generate a random integer from 0 up to (but not including) 10
+    random_int = random.randrange(0, 10)
+
+    print(f"The random integer is: {random_int}")
+    You can also specify a step, for example, to get a random even number: 
+
+    # Generate a random even integer from 0 up to (but not including) 10
+    random_even = random.randrange(0, 10, 2)
+    print(f"The random even number is: {random_even}")
+
+    3. Using random.randint()
+    The random.randint() function is an alias for random.randrange(a, b+1) and provides a random integer within an inclusive range (both the start and end values are possible outcomes). 
+
+    import random
+    # Generate a random integer between 0 and 10, inclusive
+    random_inclusive = random.randint(0, 10)
+    print(f"The random inclusive integer is: {random_inclusive}")
+
+68. How can you get a random number in python?
+
+    In Python, you can generate random numbers using the built-in random module, which provides functions for various needs, from simple integers and floats to specific statistical distributions. 
+
+    Key Functions in the random Module
+    You must first import the module: 
+
+    import random
+
+    Then, you can use the following functions:
+
+    1. random.randint(a, b): Returns a random integer N such that a <= N <= b (both endpoints are included).
+    python
+    # Example: rolling a six-sided die (random number between 1 and 6, inclusive)
+    roll = random.randint(1, 6)
+    print(roll)
+
+    2. random.randrange(start, stop, step): Returns a randomly selected element from range(start, stop, step).
+    python
+    # Example: a random even number between 0 and 10 (0, 2, 4, 6, 8, 10)
+    even_number = random.randrange(0, 11, 2)
+    print(even_number)
+
+    3. random.random(): Returns a random floating-point number in the range (0.0, 1.0) (inclusive of 0.0, but exclusive of 1.0).
+    python
+    # Example: a random float between 0 and 1
+    rand_float = random.random()
+    print(rand_float)
+
+    4. random.uniform(a, b): Returns a random floating-point number N such that a <= N <= b.
+    python
+    # Example: a random float between 10.5 and 25.5
+    rand_float_range = random.uniform(10.5, 25.5)
+    print(rand_float_range)
+
+69. How will you set the starting value in generating random numbers?
+
+    
