@@ -1,9 +1,5 @@
-Hello Tops 
-
-Hello Pyhton
-Hii
-This is an appended line.
-
-Hiii 
-fwfgywefgwg
-hojgfioyhofihukgjdldydjgdgujkt
+apple
+banana
+cherry
+123
+45.67
