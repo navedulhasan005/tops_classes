@@ -323,4 +323,34 @@ Memory	    Consumes more memory 	                    Consumes less memory
             file.write("Hello, Python!\n")
             file.write("This is a new line.\n")
 
-         
+83. Explain Exception handling? What is an Error in Python?         
+
+    Exception handling :- 
+        Exception handling is the process of detecting, catching, and responding to unexpected events (called exceptions) that occur during the execution of a program. This ensures the program can continue running, display user-friendly messages, or perform necessary cleanup tasks (like closing files) instead of terminating abruptly. 
+        In Python, this is primarily achieved using the try, except, else, and finally blocks.
+    
+    Error :-
+        In Python, the term "error" is often categorized into two main types:- 
+        Syntax Errors (Parsing Errors):- 
+        These occur when the code violates the grammatical rules of the Python language, such as missing a colon or using incorrect indentation. The Python interpreter cannot execute the program until these errors are fixed.
+
+        Exceptions (Runtime Errors):- 
+        These errors occur during the execution of a program, even if the syntax is correct. An exception is a Python object that represents the error event. Examples include trying to divide a number by zero (ZeroDivisionError), accessing a non-existent list index (IndexError), or using an undefined variable (NameError). 
+        Exceptions can and should be handled by the programmer to prevent the program from crashing.
+
+84. How many except statements can a try-except block have? Name Some built-in exception classes.
+
+    A single Python try block can have multiple except statements (one or more). 
+    This allows specialized handling for different types of exceptions, allowing you to catch specific errors like ValueError separately from generic ones. 
+    They are evaluated in order; the first match executes. 
+
+    Common Built-in Exception Classes in Python:-
+        ZeroDivisionError: Raised when dividing by zero.
+        ValueError: Raised when a function receives an argument with the right type but inappropriate value.
+        TypeError: Raised when an operation is applied to an inappropriate object type.
+        IndexError: Raised when a sequence subscript is out of range.
+        KeyError: Raised when a dictionary key is not found.
+        FileNotFoundError: Raised when a file or directory is requested but doesn't exist.
+        AttributeError: Raised when an attribute reference or assignment fails.
+        NameError: Raised when a variable name is not found.
+
