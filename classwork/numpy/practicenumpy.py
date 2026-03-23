@@ -18,3 +18,4 @@ b = np.array([
 c = np.sum((a,b),axis=1)
 # c = np.add(a,b)
 print(c)
+
