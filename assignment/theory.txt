@@ -354,3 +354,43 @@ Memory	    Consumes more memory 	                    Consumes less memory
         AttributeError: Raised when an attribute reference or assignment fails.
         NameError: Raised when a variable name is not found.
 
+85. When will the else part of try-except-else be executed?
+
+    The else block in a try-except-else statement is executed only when no exceptions are raised in the try block. 
+    If the try block completes without triggering any except handlers, the else block will run immediately afterward. 
+
+    Key Points to Remember:-
+
+        Success-only: It is the perfect place for code that should only run if the "risky" operation in the try block was successful.
+
+        Not for error handling: If an exception does occur and is caught by an except block, the else block is skipped.
+
+        Distinction from finally: The else block only runs on success. In contrast, the finally block (if present) will always run, 
+        regardless of whether an exception occurred or not. 
+
+86. Can one block of except statements handle multiple exception?
+
+    one except block can handle multiple exceptions in Python by listing them as a tuple within the statement, such as except (TypeError, ValueError) as e:. This approach is used to execute the same error-handling code for different types of exceptions,
+    which keeps code cleaner and more readable. 
+
+    Key Aspects of Handling Multiple Exceptions:-
+
+        Tuple Syntax: You must group exceptions in parentheses: except (Exception1, Exception2):.
+
+        Alternative Approach: You can have separate except blocks for different exceptions if they require different handling logic.
+
+        Best Practice: When catching multiple specific exceptions, ensure more generic exceptions are listed last in your try-except structure, as the first matching handler is executed.
+
+87. When is the finally block executed?
+
+    In Python, the finally block is always executed before the try statement is left, regardless of whether an exception occurred, was handled, or the block was exited via a return, break, or continue statement. 
+    This makes it ideal for essential cleanup operations like closing files or releasing resources. 
+
+    Execution Scenarios:-
+    The finally block runs in several scenarios:
+    No Exception: If the code in the try block runs without any errors, the finally block executes after the try (and optional else) block completes.
+
+    With an Exception: If an exception occurs in the try or except blocks, the finally block still runs. If the exception isn't caught by an except block, the finally block executes before the exception is re-raised to the next level of the program.
+
+    With Control Flow Statements: Even if a return, break, or continue statement is executed within the try or except blocks, the finally block will run before the function or loop is actually exited. (Note that a return statement inside the finally block itself will override any previous return values).
+
