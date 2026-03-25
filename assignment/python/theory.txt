@@ -394,3 +394,62 @@ Memory	    Consumes more memory 	                    Consumes less memory
 
     With Control Flow Statements: Even if a return, break, or continue statement is executed within the try or except blocks, the finally block will run before the function or loop is actually exited. (Note that a return statement inside the finally block itself will override any previous return values).
 
+88. What happens when „1‟== 1 is executed?
+
+    Python compares the value on the left (1) with the value on the right (1) using the equality operator ==. 
+    Since both values are equal, the expression evaluates to True, which is a Boolean value.
+
+    Two identical numbers meet, agree with each other, and return emotional validation in the form of True. 
+    If only human arguments were this efficient.
+
+89. How Do You Handle Exceptions with Try/Except/Finally in Python? Explain with coding snippets.
+
+    When you write Python code, errors are bound to happen—whether it's a user entering the wrong type of data, a file going missing, or a division by zero. 
+    Python uses exception handling to manage these unexpected events so your program doesn't crash abruptly.
+    The core mechanism for this is the try / except / finally structure. Here is how the flow of execution works:
+    Here is a breakdown of the individual blocks and how to use them.
+
+    try: This block contains the code that might cause an exception (an error).
+
+    except: This block contains the code that runs only if an exception occurs in the try block. You can catch general errors or specific ones.
+
+    finally: This block runs no matter what, whether an exception occurred or not. It is typically used for clean-up actions, like closing a file or a database connection.
+
+    Example:-
+        def read_file(filename):
+        file = None
+        try:
+            print(f"Attempting to open {filename}...")
+            file = open(filename, 'r')
+            data = file.read()
+        except FileNotFoundError:
+            print("Error: The file does not exist.")
+        except IOError:
+            print("Error: Could not read the file.")
+        else:
+            # Runs only if the file was opened and read successfully
+            print("File read successfully. Here is the content:")
+            print(data)
+        finally:
+            # Runs no matter what happened above
+            if file is not None:
+                file.close()
+                print("Cleanup: File has been closed.")
+            print("Execution of read_file completed.\n")
+
+        # If 'data.txt' doesn't exist, it will hit the except and finally blocks.
+        read_file("data.txt")
+
+90. Write python program that user to enter only odd numbers, else will raise an exception.
+
+    while True:
+        try:
+            num = int(input("Enter an odd number: "))
+            if num % 2 == 0:
+                raise ValueError(f"Invalid input: {num} is an even number. Only odd numbers are allowed.")
+            return num
+
+        except ValueError as e:
+            print(f"Error: {e}")
+            print("Please try again.")
+            print("-" * 20)
